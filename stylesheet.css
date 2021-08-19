@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+body {
+	background-color: black;
+	width: 100%;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+header h1 {
+	margin: 20px;
+	text-decoration: underline;
+}
+
+main {
+	display: flex;
+	justify-content: space-around;
+}
+
+#home-left {
+	width: 33%;
+}
+
+#home-left p {
+	margin: 0px 40px;
+}
+
+#system-gif {
+	margin: 20px 40px;
+}
+
+#git-link {
+	margin: 20px 40px;
+	color: blue;
+}
+
+#home-right {
+	width: 66%;
+}
+
+#home-right h2 {
+	color: purple;
+	margin-left: 100px;
+	margin-bottom: 10px;
+}
+
+#home-right ul {
+	margin-left: 120px;
+}
+
+#home-right ul li {
+	margin: 10px;
+}
+
+#home-right p {
+	margin: 10px 10px 10px 130px;
+}

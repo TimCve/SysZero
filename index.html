@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SystemZero</title>
+	<link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+	<header>
+		<h1>SystemZero</h1>
+		<h2>A bootloader, kernel & shell utilities; made from scratch by Zer0flag</h2>
+		<p><i style="color:red">This website is not mobile friendly because smartphones are spying devices and should not be used.</i></p>
+	</header>
+
+	<main>
+		<div id="home-left">
+			<img id="system-gif" src="./SystemZero.gif" alt="SystemZero GIF">
+			<p>A DOS-like operating system for the x86 CPU architecture. Has support for multiple IDE drives (IDE primary master is always the boot/system drive). Input is recieved from a PS/2 keyboard and output is given through 16-color 80x25 character VGA. A series of programs come with the operating system, they can also be loaded onto the virtual drive by the automake macro if you desire to run SystemZero inside a virtual machine.</p>
+			<br>
+			<p>SystemZero is licensed under the glorious GPLv3 and can be cloned from here: </p>
+			<i><a id="git-link" href="https://github.com/z3r0flag/SystemZero" target="_blank">https://github.com/z3r0flag/SystemZero.git</a></i>
+		</div>
+		<div id="home-right">
+			<h2>Main features of SystemZero:</h2>
+			<ul>
+				<li><strong>80x25 character 16-color VGA display</strong> with support for color changing via the <strong>color</strong> command. TTY speed varies with computer so the keyboard character printing speed gets auto-calibrated at boot.</li>
+				<li>PS/2 keyboard support with advanced features like shifting characters during erasing or inserting text where text already exists in front.</li>
+				<li>Single processing with subprocess support (requires manual memory allocation but that gives the programmer a greater degree of power over how programs behave). <strong>All processes run in ring-0 or kernel mode.</strong></li>
+				<li>Filesystem also built from scratch (named ESFS or Even Simpler Filesystem). The <strong>maximum filesize is 896kb</strong>. No support for directories.</li>
+				<li><strong>Support for multiple IDE drives in ATA PIO mode</strong>. Commands are automatically ran from the system drive so that it it possible to switch drives in case a <strong>drive</strong> command is not present on the selected drive.</li>
+			</ul>
+			<h2>Basic usage of built-in shell utilities:</h2>
+			<p><strong>append</strong> - Syntax: append [-n (adds a newline character at end of appended text)] file.ext text text text text...</p>
+			<p><strong>cls</strong> - Syntax: cls</p>
+			<p><strong>color</strong> - Syntax: color [0 - 15 (bg)] [0 - 15 (fg)]</p>
+			<p><strong>del</strong> - Syntax: del file.ext</p>
+			<p><strong>drive</strong> - Syntax: drive [0 - 3 (drive code)]</p>
+			<p><strong>drives</strong> - Syntax: drives</p>
+			<p><strong>list</strong> - Syntax: list</p>
+			<p><strong>read</strong> - Syntax: read file.ext</p>
+			<p><strong>touch</strong> - Syntax: touch file.ext</p>
+			<p><strong>view</strong> - Syntax: view file.ext</p>
+
+			<p><i>If you want to know details about building SystemZero from source, please take a look at this <a href="https://raw.githubusercontent.com/z3r0flag/SystemZero/master/README.md" target="_blank">README document</a></i></p>
+		</div>
+	</main>
+</body>
+</html>
