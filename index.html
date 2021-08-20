@@ -30,16 +30,17 @@
 				<li><strong>Support for multiple IDE drives in ATA PIO mode</strong>. Commands are automatically ran from the system drive so that it it possible to switch drives in case a <strong>drive</strong> command is not present on the selected drive.</li>
 			</ul>
 			<h2>Basic usage of built-in shell utilities:</h2>
-			<p><strong>append</strong> - Syntax: append [-n (adds a newline character at end of appended text)] file.ext text text text text...</p>
-			<p><strong>cls</strong> - Syntax: cls</p>
-			<p><strong>color</strong> - Syntax: color [0 - 15 (bg)] [0 - 15 (fg)]</p>
-			<p><strong>del</strong> - Syntax: del file.ext</p>
-			<p><strong>drive</strong> - Syntax: drive [0 - 3 (drive code)]</p>
-			<p><strong>drives</strong> - Syntax: drives</p>
-			<p><strong>list</strong> - Syntax: list</p>
-			<p><strong>read</strong> - Syntax: read file.ext</p>
-			<p><strong>touch</strong> - Syntax: touch file.ext</p>
-			<p><strong>view</strong> - Syntax: view file.ext</p>
+			<p><strong>append</strong> - (append text data to a file) Syntax: append [-n (optional: adds a newline character at end of appended text)] file.ext text text text text...</p>
+			<p><strong>cls</strong> - (clear the screen) Syntax: cls</p>
+			<p><strong>color</strong> - (set the text console color scheme) Syntax: color [0 - 15 (bg)] [0 - 15 (fg)]</p>
+			<p><strong>del</strong> - (delete a file) Syntax: del file.ext</p>
+			<p><strong>drive</strong> - (select a drive) Syntax: drive [0 - 1 (drive code)]</p>
+			<p><strong>drives</strong> - (list avaliable drives) Syntax: drives</p>
+			<p><strong>format</strong> - (format selected drive) Syntax: format</p>
+			<p><strong>list</strong> - (list files on selected drive) Syntax: list</p>
+			<p><strong>read</strong> - (dump text data from file onto console) Syntax: read file.ext [0 - ... (optional: read 512 byte chunk at given index)]</p>
+			<p><strong>touch</strong> - (create a file) Syntax: touch file.ext</p>
+			<p><strong>view</strong> - (view a file with the ability to scroll forward and back) Syntax: view file.ext</p>
 
 			<p><i>If you want to know details about building SystemZero from source, please take a look at this <a href="https://raw.githubusercontent.com/z3r0flag/SystemZero/master/README.md" target="_blank">README document</a></i></p>
 		</div>
