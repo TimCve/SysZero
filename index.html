@@ -35,12 +35,14 @@
 				<li><strong>Support for multiple IDE drives in ATA PIO mode</strong>. Commands are automatically ran from the system drive so that it it possible to switch drives in case a <strong>drive</strong> command is not present on the selected drive.</li>
 			</ul>
 			<h2>Basic usage of built-in shell utilities:</h2>
-			<p><strong>append</strong> - (append text data to a file) Syntax: append [-n (optional: adds a newline character at end of appended text)] file.ext text text text text...</p>
+			<p><strong>chain</strong> - (chain together commands) Syntax: chain $command1$command2$command3</p>
 			<p><strong>cls</strong> - (clear the screen) Syntax: cls</p>
 			<p><strong>color</strong> - (set the text console color scheme) Syntax: color [0 - 15 (bg)] [0 - 15 (fg)]</p>
 			<p><strong>del</strong> - (delete a file) Syntax: del file.ext</p>
 			<p><strong>drive</strong> - (select a drive) Syntax: drive [0 - 3 (drive code)]</p>
 			<p><strong>drives</strong> - (list avaliable drives) Syntax: drives</p>
+			<p><strong>edit</strong> - (edit a text file) Syntax: edit file.ext</p>
+			<p><strong>hexedit</strong> - (edit a file in hex mode) Syntax: hexedit file.ext</p>
 			<p><strong>format</strong> - (format selected drive) Syntax: format</p>
 			<p><strong>copy</strong> - (copy a file) Syntax: src_drive_code:src_file dest_drive_code:dest_file</p>
 			<p><strong>list</strong> - (list files on selected drive) Syntax: list</p>
